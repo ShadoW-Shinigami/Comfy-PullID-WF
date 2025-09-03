@@ -5,33 +5,33 @@ PullID Workflow for consistent character dataset creation that can then be used 
 
 ### Custom Nodes Used
 
-Reactor - httpsgithub.comGourieffComfyUI-ReActor
+Reactor - https://github.com/Gourieff/ComfyUI-ReActor
 
-Patches_II - httpsgithub.comlldacingComfyUI_Patches_ll (Speeds up the workflow by 3X)
+Patches_II - https://github.com/lldacing/ComfyUI_Patches_ll (Speeds up the workflow by 3X)
 
-PulID_Flux_II - httpsgithub.comlldacingComfyUI_PuLID_Flux_ll (Better PulID with speed optimisations)
+PulID_Flux_II - https://github.com/lldacing/ComfyUI_PuLID_Flux_ll (Better PulID with speed optimisations)
 
-Use Everywhere Nodes - httpsgithub.comchrisgoringecg-use-everywhere
+Use Everywhere Nodes - https://github.com/chrisgoringe/cg-use-everywhere
 
-KJNodes - httpsgithub.comkijaiComfyUI-KJNodes (GET and SET nodes)
+KJNodes - https://github.com/kijai/ComfyUI-KJNodes (GET and SET nodes)
 
-Comfyroll Studio - httpsgithub.comSuzie1ComfyUI_Comfyroll_CustomNodes (Prompt List)
+Comfyroll Studio - https://github.com/Suzie1/ComfyUI_Comfyroll_CustomNodes (Prompt List)
 
-Negi Tools - httpsgithub.comnatto-makiComfyUI-NegiTools (GPT Calls - Have to setup with key)
+Negi Tools - https://github.com/natto-maki/ComfyUI-NegiTools (GPT Calls - Have to setup with key)
 
-Impact Pack - httpsgithub.comltdrdataComfyUI-Impact-Pack
+Impact Pack - https://github.com/ltdrdata/ComfyUI-Impact-Pack
 
-Impact Subpack - httpsgithub.comltdrdataComfyUI-Impact-Subpack (Face Detailer)
+Impact Subpack - https://github.com/ltdrdata/ComfyUI-Impact-Subpack (Face Detailer)
 
 ### Models Used
 
-Flux Dev - httpshuggingface.coblack-forest-labsFLUX.1-dev
+Flux Dev - https://huggingface.co/black-forest-labs/FLUX.1-dev
 
-PulID-flux-0.9.1 - httpshuggingface.coguozinanPuLID
+PulID-flux-0.9.1 - https://huggingface.co/guozinan/PuLID
 
-Upscaler Controlnet - httpshuggingface.cojasperaiFlux.1-dev-Controlnet-Upscaler
+Upscaler Controlnet - https://huggingface.co/jasperai/Flux.1-dev-Controlnet-Upscaler
 
-Emotion Lora - httpscivitai.commodels914282expression-helper-20
+Emotion Lora - https://civitai.com/models/914282/expression-helper-20
 
 ### Usage
 
@@ -41,12 +41,12 @@ Emotion Lora - httpscivitai.commodels914282expression-helper-20
 - Save the 11 images as 1.png, 2.png …….. 11.png
 - Use the following caption sets. Jane for women and John for men
     
-    Jane.zip
+    [Jane.zip](Jane.zip)
     
-    John.zip
+    [John.zip](John.zip)
     
 - Zip the set of Captions and Images.
-- Use the FAL-Flux-Fast-Trainer here with these settings
+- Use the FAL-Flux-Fast-Trainer here with these settings:
     - Upload the zip file.
     - Trigger Word - Either John or Jane depending on the gender.
     - Create Masks - Enabled
@@ -54,7 +54,7 @@ Emotion Lora - httpscivitai.commodels914282expression-helper-20
     - Is Input Format Already Preprocessed - Enabled
 - Trained lora to be used in platform with these settings
     - Trigger either John or Jane depending on gender.
-    - Add manwoman to the metadata depending on gender.
+    - Add man/woman to the metadata depending on gender.
         - Use boy child or girl child if the ages are low
 
 ### Current Limitations
